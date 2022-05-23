@@ -1,16 +1,18 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6em;
     margin:0;
+    background-color: whitesmoke;
 }
 
 
 
 #container{
-    margin: auto;
-    margin-top: 0px;
     width: 80%;
+    margin: auto;
+    overflow: hidden;
+   
 }
 
 
@@ -53,20 +55,58 @@ body{
 #intro {
     background-image: url("background.jpeg");
     height: 300px;
+    position: relative;
+
 }
 #intro h2{
     text-align: center;
+    padding-top: 125px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 
 #firstsection{
     float:left;
-    border : 100px lightgreen;
-}
+    text-align: center;
+    width: 60%;
+    margin-top:30px;
+    margin-left: 10px;
+    min-height: 300px;
+    max-height: max-content;
+    background-color: aquamarine;
+    border: 1px dotted black;
 
+}
 
 #firstaside{
     float: right;
+    width: 33%;
+    margin-top:30px;
+    margin-right: 10px;
+    min-height: 300px;
+    max-height: max-content;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 1px dotted black;
+
 }
  
+#mainfooter{
+    float:left;
+    width: 100%;
+    background: lightgreen;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 7%;
+    text-align: center;
+
+}
+
+@media(max-width: 500px){
+    #intro{
+        width: 100%
+    }
+    
+}
